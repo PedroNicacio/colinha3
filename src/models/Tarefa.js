@@ -1,10 +1,10 @@
-class Tarefa{
-    constructor(titulo, descricao, status, data){
-        this.titulo = titulo
-        this.descricao = descricao
-        this.status = status
-        this.data = data
-    }
+class Tarefa {
+    constructor(titulo, descrição, status, data){
+        this.titulo = titulo;
+        this.descrição = descrição;
+        this.status = status;
+        this.data = data;
+        }
 }
 
 export default Tarefa

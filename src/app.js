@@ -1,15 +1,15 @@
-// Importando o packages
 import express from 'express'
+//Importações//
 
-// instanciando o servidor
-const app = express()
+//instanciando o servidor
+const app = express();
 
-// configurando o servidor para receber requisições com o corpo no formato JSON
+//configurando o servidor para receber requisições:
 app.use(express.json())
 
-// importando os controllers
-import usuarioController from './controllers/usuarioController.js'
-import tarefaController from './controllers/tarefaController.js'
+//imporando os controllers
+import usuarioController from './controllers/usuarioController.js';
+import tarefaController from './controllers/tarefaController.js';
 
 usuarioController.rotas(app)
 tarefaController.rotas(app)
